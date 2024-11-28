@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Amateur Basketball League</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .recent-scores {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .game-result {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Local Amateur Basketball League</h1>
+    </header>
+
+    <section id="standings">
+        <h2>League Standings</h2>
+        <table id="standings-table">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Team</th>
+                    <th>Played</th>
+                    <th>Won</th>
+                    <th>Lost</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Standings will be dynamically populated -->
+                <tr>
+                    <td>1</td>
+                    <td>Eagles</td>
+                    <td>10</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Lions</td>
+                    <td>10</td>
+                    <td>7</td>
+                    <td>3</td>
+                    <td>14</td>
+                </tr>
+                <!-- More teams can be added -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="recent-scores">
+        <h2>Recent Scores</h2>
+        <div class="recent-scores">
+            <div class="game-result">
+                <h3>Eagles 85 - 79 Lions</h3>
+                <p>Date: November 15, 2024</p>
+            </div>
+            <div class="game-result">
+                <h3>Tigers 72 - 68 Panthers</h3>
+                <p>Date: November 22, 2024</p>
+            </div>
+            <div class="game-result">
+                <h3>Wolves 90 - 88 Bears</h3>
+                <p>Date: November 25, 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Future JavaScript for dynamic updates can be added here
+        function updateStandings() {
+            // This function would fetch and update standings from a backend
+            console.log('Standings update placeholder');
+        }
+
+        function updateRecentScores() {
+            // This function would fetch and update recent scores from a backend
+            console.log('Recent scores update placeholder');
+        }
+
+        // Call update functions periodically
+        setInterval(updateStandings, 3600000);  // Every hour
+        setInterval(updateRecentScores, 3600000);  // Every hour
+    </script>
+</body>
+</html>
